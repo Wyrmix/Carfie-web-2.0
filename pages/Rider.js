@@ -77,57 +77,17 @@ const Rider = () => (
           <Row className="justify-content-center">
             <Link href="/Terms"><h6 className="link">Terms Apply</h6></Link>
           </Row>
-        </Col>
-      </Row>
 
-      <Row className="my-3 align-items-top">
-        <Col sm={12} lg={3}>
-          <h2 className="text-center">sign up</h2>
-        </Col>
-        <Col sm={12} lg={9}>
-          <Form>
-            <div className="form">
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address*</Form.Label>
-                <Form.Control required type="email" placeholder="youremail@mail.com" />
-              </Form.Group>
-              <fieldset>
-                <Form.Group>
-                  <Form.Label>How did you hear about us?</Form.Label>
-                  <Col>
-                    <Form.Check
-                      type="radio"
-                      label="Online (Facebook/Instagram/etc)"
-                      id="online"
-                    />
-                    <Form.Check
-                      type="radio"
-                      label="Offline (Flyers)"
-                      id="offline"
-                    />
-                    <Form.Check
-                      type="radio"
-                      label="Other (Word of mouth)"
-                      id="other"
-                    />
-                    <Form.Check
-                      type="radio"
-                      label="iHeartRadio"
-                      id="iHeartRadio"
-                    />
-                  </Col>
-                </Form.Group>
-              </fieldset>
-            </div>
-            <Button variant="primary" type="submit">
-              Sign up to Ride
-                </Button>
-          </Form>
-        </Col>
-      </Row>
+          <Row className="justify-content-center align-items-center">
+            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+              <a href=""><Image fluid src="/img/Apple.png" /></a>
+            </Col>
+            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+              <a href=""><Image fluid src="/img/Google.png" /></a>
+            </Col>
+          </Row>
 
-      <Row className="justify-content-center">
-        <h6>*Required field. Your privacy is protected.</h6>
+        </Col>
       </Row>
 
     </Container>

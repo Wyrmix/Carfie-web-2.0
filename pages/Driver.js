@@ -48,69 +48,33 @@ const Driver = () => (
         </Col>
       </Row>
       <Row className="justify-content-center align-items-center">
-        <Col sm={11} lg={6}>
+        <Col sm={11} lg={8} xl={6}>
           <Row className="text-center">
             <h5>Sign up to drive with Carfie. The official rideshare partner of
                 iHeartRadio JingleBall 2019, 7:30PM at Dickies Arena, Fort Worth TX.
                 Complete 150 rides within 90 days for a <strong>$500</strong> bonus.
                 Complete 2 rides to and from Jingle ball for a <strong>$1000</strong> sign up bonus.
-              App Available for download Nov 15 or later.
-          </h5>
+                App Available for download Nov 15 or later.
+            </h5>
           </Row>
+
           <Row className="justify-content-center">
             <Link href="/Terms"><h6 className="link">Terms Apply</h6></Link>
           </Row>
-          <Row className="my-3 align-items-top">
-            <Col sm={12} lg={3}>
-              <h2 className="text-center">sign up</h2>
+
+          <Row className="justify-content-center align-items-center">
+            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+              <a href="https://apps.apple.com/us/app/carfie-driver/id1488008094"><Image fluid src="/img/Apple.png" /></a>
             </Col>
-            <Col sm={12} lg={9}>
-              <Form>
-                <div className="form">
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address*</Form.Label>
-                    <Form.Control required type="email" placeholder="youremail@mail.com" />
-                  </Form.Group>
-                  <fieldset>
-                    <Form.Group>
-                      <Form.Label>How did you hear about us?</Form.Label>
-                      <Col>
-                        <Form.Check
-                          type="radio"
-                          label="Online (Facebook/Instagram/etc)"
-                          id="online"
-                        />
-                        <Form.Check
-                          type="radio"
-                          label="Offline (Flyers)"
-                          id="offline"
-                        />
-                        <Form.Check
-                          type="radio"
-                          label="Other (Word of mouth)"
-                          id="other"
-                        />
-                        <Form.Check
-                          type="radio"
-                          label="iHeartRadio"
-                          id="iHeartRadio"
-                        />
-                      </Col>
-                    </Form.Group>
-                  </fieldset>
-                </div>
-                <Button className="btn" variant="primary" type="submit">
-                  Sign up to Drive
-                </Button>
-              </Form>
+            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+              <a href="https://play.google.com/store/apps/details?id=com.carfie.driver"><Image fluid src="/img/Google.png" /></a>
             </Col>
           </Row>
-          <Row className="justify-content-center">
-            <h6>*Required field. Your privacy is protected.</h6>
-          </Row>
+
         </Col>
       </Row>
     </Container>
+
 
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
