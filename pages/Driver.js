@@ -38,13 +38,12 @@ const Driver = () => (
     <Container>
       <Row className="d-flex justify-content-center">
         <h2 className="text-shadow text-center ml-5">BECOME A DRIVER WITH CARFIE.</h2>
-        <Image fluid className="mw-25 mt-3 ml-5" src="/img/Jingle-Ball-Logo.png" />
       </Row>
 
       <Row className="justify-content-center align-items-center my-3">
         <Col lg={8}>
           <Row className="align-items-center justify-content-center">
-            <Image fluid src="/img/Driver_Icon.png" />
+            <Image fluid src="/img/Jingle-Ball-Driver.png" />
           </Row>
         </Col>
       </Row>
