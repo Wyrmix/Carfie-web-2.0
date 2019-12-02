@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 const Nav = () => (
   <Container>
@@ -41,8 +42,7 @@ const Driver = () => (
       <Row className="justify-content-center align-items-center my-3">
         <Col lg={8}>
           <Row className="align-items-center justify-content-center">
-            <img className="icon" src="/img/Driver_icon.png" />
-            <img className="green-carfie" src="/img/greencarfie.png" />
+            <Image fluid src="/img/Driver_Icon.png" />
           </Row>
         </Col>
       </Row>

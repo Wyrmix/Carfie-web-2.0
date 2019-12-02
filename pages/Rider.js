@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 const Nav = () => (
   <Container>
@@ -41,8 +42,7 @@ const Rider = () => (
 
       <Container className="mw-100 mx-0 h-50 px-0 d-flex justify-content-center">
         <Col sm={12} lg={8}>
-          <img className="icon" src="/img/Rider_icon.png" />
-          <img className="red-carfie d-block img-fluid" src="/img/REDCARFIE.png" />
+        <Image fluid src="/img/Rider_Icon.png" />
         </Col>
       </Container>
 

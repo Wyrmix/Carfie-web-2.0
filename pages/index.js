@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const NavBar = () => (
   <Container>
@@ -52,18 +53,18 @@ const Home = () => (
           <h3 className="text-white text-shadow">sign up</h3>
         </Col>
         <Col xs={6} md={6} className="d-flex flex-column align-items-center">
-          <Link href="/Rider"><img className="icon img-fluid h-50" src="/img/Rider_icon.png" /></Link>
+          <Link href="/Rider"><Image fluid className="w-50" src="/img/Rider-Button.png" /></Link>
           <h3 className="text-white text-shadow">ride</h3>
         </Col>
         <Col xs={6} md={6} className="d-flex flex-column align-items-center">
-          <Link href="/Driver"><img className="icon img-fluid h-50" src="/img/Driver_icon.png" /></Link>
+          <Link href="/Driver"><Image fluid className="w-50" src="/img/Driver-Button.png" /></Link>
           <h3 className="text-white text-shadow">drive</h3>
         </Col>
       </Row>
     </Container>
 
     <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center">
-      <Row className="justify-content-center align-items-center">
+      <Row className="d-flex justify-content-center align-items-center">
         <Col lg={6, { order: 1 }} md={12, { order: 1 }} className="justify-content-center align-items-center">
           <img className="img-fluid mh-50 mw-50" src="/img/iphonecarfie.png" />
         </Col>
@@ -81,8 +82,8 @@ const Home = () => (
     </Container>
 
     <div className=" grey-gradient h-75 mw-100 mx-0 d-flex justify-content-center align-items-center">
-      <Row className="justify-content-center align-items-center">
-        <Col lg={6} sm={12} className="text-center justify-content-center align-items-center">
+      <Row className="d-flex justify-content-center align-items-center">
+        <Col lg={6, { order: 1 }} md={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
             <strong>
               Ready anywhere, anytime
@@ -92,23 +93,47 @@ const Home = () => (
             Daily commute. Errand across town. Early morning flight. Late night drinks. Wherever you’re headed, count on Carfie for a ride—no reservations needed.
         </h4>
         </Col>
-        <Col lg={6} sm={12} className="justify-content-center align-items-center">
+        <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
+          <Image fluid className="w-50" src="/img/carfie-anywhere-green.png" />
         </Col>
       </Row>
     </div>
 
     <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center">
-      <Row className="justify-content-center align-items-center">
-        <Col lg={6, { order: 1 }} md={12, { order: 2 }} className="justify-content-center align-items-center">
-          <img className="img-fluid mh-50 mw-50" src="/img/iphonecarfie.png" />
+      <Row className="d-flex justify-content-center align-items-center">
+        <Col lg={6} md={12} className="d-flex justify-content-center align-items-center">
+          <Image fluid className="w-50" src="/img/rewards.png" />
         </Col>
-        <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="text-center justify-content-center align-items-center">
+        <Col lg={6} md={12} className="text-center justify-content-center align-items-center">
+          <h2 className="grey">
+            <strong>
+              earn rewards
+          </strong>
+          </h2>
           <h4 className="grey">
-            You can always request everyday cars at everyday prices. But sometimes you need a bit more space. Or you want to go big on style. With Carfie, the choice is yours.
+            Both our drivers and rides can earn points whenever they ride or drive. So buckle up and start earning rewards with Carfie today. 
         </h4>
         </Col>
       </Row>
     </Container>
+
+    <div className=" grey-gradient h-75 mw-100 mx-0 d-flex justify-content-center align-items-center">
+      <Row className="d-flex w-100 justify-content-center align-items-center">
+        <Col lg={6, { order: 1 }} md={12, { order: 2 }} className="text-center justify-content-center align-items-center">
+          <h2>
+            <strong>
+              low-cost luxury
+          </strong>
+          </h2>
+          <h4>
+          You can always request everyday cars at everyday prices. But sometimes you need a bit more space. Or you want to go big on style. With Carfie, the choice is yours.
+        </h4>
+        </Col>
+        <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
+          <Image fluid className="w-50" src="/img/untitled.png" />
+        </Col>
+      </Row>
+    </div>
 
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
