@@ -92,14 +92,6 @@ const Driver = () => (
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-    .masonry-entry:hover a img{
-      -webkit-transform:scale(1); 
-      -moz-transform:scale(1); 
-      -ms-transform:scale(1);
-      -o-transform:scale(1); 
-       
-    }
-
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Raleway', sans-serif;
       color: #878787;

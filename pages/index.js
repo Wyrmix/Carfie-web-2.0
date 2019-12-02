@@ -57,26 +57,26 @@ const Home = () => (
     />
     <NavBar />
 
-    <Container fluid className="h-50 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/splash.png)' }}>
+    <Container className="h-50 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/splash.png)' }}>
       <h3 className="text-white text-shadow">The only ride sharing app that rewards you for events and conventions.</h3>
       <h4 className="text-white sponsor-text">Proud to be the official ride share partner of</h4>
       <img className="sponsor-logo img-fluid d-block" src="/img/Sponsor_logo.png" />
     </Container>
     <Container fluid className="h-50 my-3 mw-100 mx-0 d-flex justify-content-center align-items-center">
       <Row className="d-flex justify-content-center align-items-center w-100 pr-lg-5">
-        <Col lg={6} sm={12} className="d-flex justify-content-center align-item-center">
+        <Col lg={6} xs={12} className="d-flex h-25 justify-content-center align-item-center">
           <Row>
-            <Col lg={12} className="w-100 d-flex justify-content-center align-items-center">
+            <Col lg={12} md={6} sm={6} className="w-100 d-flex justify-content-center align-items-center">
               <h2 className="grey">
                 drive for us
             </h2>
             </Col>
-            <Col lg={12} className="w-100">
+            <Col lg={12} md={6} sm={6} className="w-100">
               <Row>
                 <Col lg={6} className="w-50 d-flex justify-content-lg-end justify-content-sm-center align-items-center">
                   <Link href="/Driver"><Image fluid className="w-50" src="/img/Driver-Button.png" /></Link>
                 </Col>
-                <Col lg={6} className="w-50">
+                <Col lg={6}  className="w-50">
                   <Row>
                     <a href="https://apps.apple.com/us/app/carfie-driver/id1488008094"><Image fluid src="/img/Apple.png" /></a>
                   </Row>
@@ -88,14 +88,14 @@ const Home = () => (
             </Col>
           </Row>
         </Col>
-        <Col lg={6} sm={12} className="d-flex justify-content-center align-item-center">
+        <Col lg={6} xs={12} className="d-flex h-25 justify-content-center align-item-center">
           <Row>
-            <Col lg={12} className="w-100 d-flex justify-content-center align-items-center">
+            <Col lg={12}  md={6} sm={6} className="w-100 d-flex justify-content-center align-items-center">
               <h2 className="grey">
                 ride with us
             </h2>
             </Col>
-            <Col lg={12} className="w-100">
+            <Col lg={12} md={6} sm={6} className="w-100">
               <Row>
                 <Col lg={6} className="w-50 d-flex justify-content-lg-end justify-content-sm-center align-items-center">
                   <Link href="/Rider"><Image fluid className="w-50" src="/img/Rider-Button.png" /></Link>
@@ -115,12 +115,12 @@ const Home = () => (
       </Row>
     </Container>
 
-    <Container fluid className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Green-grad.png)' }}>
+    <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Green-grad.png)' }}>
       <Row className="d-flex justify-content-center align-items-center">
-        <Col lg={6, { order: 1 }} md={12, { order: 1 }} className="justify-content-center align-items-center">
+        <Col lg={6, { order: 1 }} sm={12, { order: 1 }} className="justify-content-center align-items-center">
           <Image fluid className="mh-50 mw-50" src="/img/iphonecarfie.png" />
         </Col>
-        <Col lg={6, { order: 2 }} md={12, { order: 2 }} className="text-center justify-content-center align-items-center">
+        <Col lg={6, { order: 2 }} sm={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
             <strong>
               Tap the app, get a ride
@@ -133,9 +133,9 @@ const Home = () => (
       </Row>
     </Container>
 
-    <Container fluid className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Yellow-grad.png)' }}>
+    <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Yellow-grad.png)' }}>
       <Row className="d-flex justify-content-center align-items-center">
-        <Col lg={6, { order: 1 }} md={12, { order: 2 }} className="text-center justify-content-center align-items-center">
+        <Col lg={6, { order: 1 }} sm={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
             <strong>
               Ready anywhere, anytime
@@ -145,21 +145,21 @@ const Home = () => (
           Daily commute. Errand across town. Early morning flight. Late night drinks. Wherever you're headed, count on Carfie for a ride with real-time request — no reservations needed.
         </h4>
         </Col>
-        <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
-          <Image fluid alt="" className="w-50" src="/img/carfie-anywhere-green.png" />
+        <Col lg={6, { order: 2 }} sm={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
+          <Image fluid className="w-50" src="/img/carfie-anywhere-green.png" />
         </Col>
       </Row>
     </Container>
 
-    <Container fluid className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Red-grad.png)' }}>
+    <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center" style={{ backgroundImage: 'url(/img/Red-grad.png)' }}>
       <Row className="d-flex justify-content-center align-items-center">
-        <Col lg={6} md={12} className="d-flex justify-content-center align-items-center">
-          <Image fluid alt="" className="w-50" src="/img/rewards.png" />
+        <Col lg={6, { order: 1 }} sm={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
+          <Image fluid className="w-50" src="/img/rewards.png" />
         </Col>
-        <Col lg={6} md={12} className="text-center justify-content-center align-items-center">
+        <Col lg={6, { order: 2 }} sm={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
             <strong>
-              Earn rewards
+            Earn rewards
           </strong>
           </h2>
           <h4>
@@ -169,7 +169,7 @@ const Home = () => (
       </Row>
     </Container>
 
-    <Container fluid className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Green-Red-grad.png)' }}>
+    <Container className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center" style={{ backgroundImage: 'url(/img/Green-Red-grad.png)' }}>
       <Row className="d-flex w-100 justify-content-center align-items-center">
         <Col lg={6, { order: 1 }} sm={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
@@ -182,7 +182,7 @@ const Home = () => (
         </h4>
         </Col>
         <Col lg={6, { order: 2 }} sm={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
-          <Image fluid alt="" className="w-50" src="img/untitled.png" />
+          <Image fluid className="w-50" src="/img/untitled.png" />
         </Col>
       </Row>
     </Container>
@@ -191,28 +191,6 @@ const Home = () => (
 
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
-    a {
-      outline: 0;
-   }
-
-    img {
-      outline: 0 !important;
-      border: 0 !important;
-      display: block !important;
-    }
-
-    img:hover {
-      outline: 0 !important;
-      border: 0 !important;
-      display: block;
-  }
-
-   a:hover{
-    outline: 0 !important;
-    border: 0 !important;
-    display: block;
-   }
 
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Raleway', sans-serif;
