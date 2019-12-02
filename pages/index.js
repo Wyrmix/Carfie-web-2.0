@@ -146,7 +146,7 @@ const Home = () => (
         </h4>
         </Col>
         <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
-          <Image fluid className="w-50" src="/img/carfie-anywhere-green.png" />
+          <Image fluid alt="" className="w-50" src="/img/carfie-anywhere-green.png" />
         </Col>
       </Row>
     </Container>
@@ -154,7 +154,7 @@ const Home = () => (
     <Container fluid className="h-75 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundImage: 'url(/img/Red-grad.png)' }}>
       <Row className="d-flex justify-content-center align-items-center">
         <Col lg={6} md={12} className="d-flex justify-content-center align-items-center">
-          <Image fluid className="w-50" src="/img/rewards.png" />
+          <Image fluid alt="" className="w-50" src="/img/rewards.png" />
         </Col>
         <Col lg={6} md={12} className="text-center justify-content-center align-items-center">
           <h2>
@@ -182,7 +182,7 @@ const Home = () => (
         </h4>
         </Col>
         <Col lg={6, { order: 2 }} sm={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
-          <Image fluid className="w-50" src="/img/untitled.png" />
+          <Image fluid alt="" className="w-50" src="img/untitled.png" />
         </Col>
       </Row>
     </Container>
@@ -191,6 +191,28 @@ const Home = () => (
 
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+    a {
+      outline: 0;
+   }
+
+    img {
+      outline: 0 !important;
+      border: 0 !important;
+      display: block !important;
+    }
+
+    img:hover {
+      outline: 0 !important;
+      border: 0 !important;
+      display: block;
+  }
+
+   a:hover{
+    outline: 0 !important;
+    border: 0 !important;
+    display: block;
+   }
 
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Raleway', sans-serif;
