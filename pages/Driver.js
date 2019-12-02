@@ -1,16 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import Nav from 'react-bootstrap/Nav';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 
-const Nav = () => (
+const NavBar = () => (
   <Container>
-    <Navbar className="p-0" variant="light">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <Navbar className="p-0 justify-content-between" variant="light">
       <Navbar.Brand href="/">
         <img
           alt=""
@@ -20,12 +25,20 @@ const Nav = () => (
           className="d-inline-block align-top"
         />
       </Navbar.Brand>
+      <Nav>
+        <Nav.Item>
+          <Nav.Link href="/Driver">Drive</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Rider">Ride</Nav.Link>
+        </Nav.Item>
+      </Nav>
     </Navbar>
   </Container>
 );
 
 const Driver = () => (
-  <Container className="mb-sm-5">
+  <Container fluid className="mb-sm-5">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -33,9 +46,9 @@ const Driver = () => (
       crossorigin="anonymous"
     />
 
-    <Nav />
+    <NavBar />
 
-    <Container>
+    <Container fluid className="mb-3">
       <Row className="d-flex justify-content-center">
         <h2 className="text-shadow text-center ml-5">BECOME A DRIVER WITH CARFIE.</h2>
       </Row>
@@ -49,17 +62,18 @@ const Driver = () => (
       </Row>
       <Row className="justify-content-center align-items-center">
         <Col sm={11} lg={8} xl={6}>
-          <Row className="text-center">
-            <h5>Sign up to drive with Carfie. The official rideshare partner of
-                iHeartRadio JingleBall 2019, 7:30PM at Dickies Arena, Fort Worth TX.
-                Complete 150 rides within 90 days for a <strong>$500</strong> bonus.
-                Complete 2 rides to and from Jingle ball for a <strong>$1000</strong> sign up bonus.
-                App Available for download Nov 15 or later.
-            </h5>
+          <Row className="justify-content-center">
+            <h5 className="info text-center">Sign up to drive with Carfie. The official rideshare partner of iHeartRadio JingleBall 2019, 7:30PM at Dickies Arena, Fort Worth TX. </h5>
+
+            <h5 className="info text-center">Complete 150 rides within 90 days for a <strong>$500</strong> bonus.</h5>
+
+            <h5 className="info text-center">Complete 2 rides to and from Jingle ball for a <strong>$1000</strong> sign up bonus.</h5>
+
+            <h5 className="info text-center">App Available for download Nov 15 or later.</h5>
           </Row>
 
           <Row className="justify-content-center">
-            <Link href="/Terms"><h6 className="link">Terms Apply</h6></Link>
+            <a href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/037180f9-f522-469d-b9d7-ff8af552e19d/Carfie_Terms.pdf"><h6 className="link">Terms Apply</h6></a>
           </Row>
 
           <Row className="justify-content-center align-items-center">
@@ -70,7 +84,6 @@ const Driver = () => (
               <a href="https://play.google.com/store/apps/details?id=com.carfie.driver"><Image fluid src="/img/Google.png" /></a>
             </Col>
           </Row>
-
         </Col>
       </Row>
     </Container>
@@ -84,69 +97,18 @@ const Driver = () => (
       color: #878787;
     }
 
-    .btn-primary{
-      background-color: #2e9599 !important;
-      border-color: #2e9599 !important;
-    }
-
-    .form{
-      font-family: 'Raleway', sans-serif;
-      color: #878787;
-    }
-
     .text-shadow{
       text-shadow: 0px 2px 2px rgba(135, 135, 135, 0.16);
     }
     
-    .icon{
-      width: 215px;
-      height: 215px;
-      position: absolute;
-      top: 15%;
-      left: 15%;
-    }
 
     .link{
       color: #2E9599;
     }
 
-    .green-carfie{
-      width: 50%;
-      height: 50%;
-      margin-left: 10rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-      /* For mobile phones: */
-      .icon{
-        width: 110px;
-        height: 110px;
-        position: absolute;
-        top: 17%;
-        left: -12%;
-      }
-      .green-carfie{
-        width: 100%;
-        height: 100%;
-        margin-left: 7rem;
-      }
-    }
-
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
-      /* For ipads: */
-      .icon{
-        width: 40%;
-        height: 40%;
-        position: absolute;
-        top: 17%;
-        left: -23%;
-      }
-
-      .green-carfie{
-        width: 100%;
-        height: 100%;
-        margin-left: 7rem;
-      }
+    .info{
+      padding-top: .3rem;
+      padding-bottom: .3rem;
     }
 
      `}

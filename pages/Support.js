@@ -11,7 +11,7 @@ const Nav = () => (
   <Container>
     <Navbar className="p-0" variant="light">
       <Navbar.Brand href="/">
-        <img
+        <Image
           alt=""
           src="/img/CARFIE_LOGO.png"
           width="50%"
