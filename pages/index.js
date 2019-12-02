@@ -37,6 +37,16 @@ const NavBar = () => (
   </Container>
 );
 
+const Footer = () => (
+  <Navbar sticky="bottom" bg="dark" variant="dark" className="d-flex justify-content-center align-items-center w-100">
+  <Nav className="d-flex justify-content-between align-items-center w-50">
+    <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/037180f9-f522-469d-b9d7-ff8af552e19d/Carfie_Terms.pdf">Terms</Nav.Link>
+    <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/a5a2c9f7-e723-4887-9005-e5d4f34e44fa/Carfie_Privacy.pdf">Privacy</Nav.Link>
+    <Nav.Link href="/Support">Support</Nav.Link>
+  </Nav>
+</Navbar>
+);
+
 const Home = () => (
   <Container className="px-0 mx-0 vw-100 mw-100 vh-100 min-vh-100">
     <link
@@ -107,11 +117,11 @@ const Home = () => (
         <Col lg={6} md={12} className="text-center justify-content-center align-items-center">
           <h2 className="grey">
             <strong>
-              earn rewards
+              Earn rewards
           </strong>
           </h2>
           <h4 className="grey">
-            Both our drivers and rides can earn points whenever they ride or drive. So buckle up and start earning rewards with Carfie today. 
+            Both our drivers and rides can earn points whenever they ride or drive. So buckle up and start earning rewards with Carfie today.
         </h4>
         </Col>
       </Row>
@@ -122,11 +132,11 @@ const Home = () => (
         <Col lg={6, { order: 1 }} md={12, { order: 2 }} className="text-center justify-content-center align-items-center">
           <h2>
             <strong>
-              low-cost luxury
+              Low-cost luxury
           </strong>
           </h2>
           <h4>
-          You can always request everyday cars at everyday prices. But sometimes you need a bit more space. Or you want to go big on style. With Carfie, the choice is yours.
+            You can always request everyday cars at everyday prices. But sometimes you need a bit more space. Or you want to go big on style. With Carfie, the choice is yours.
         </h4>
         </Col>
         <Col lg={6, { order: 2 }} md={12, { order: 1 }} className="d-flex justify-content-center align-items-center">
@@ -134,6 +144,8 @@ const Home = () => (
         </Col>
       </Row>
     </div>
+
+    <Footer/>
 
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');

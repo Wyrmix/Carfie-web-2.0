@@ -36,9 +36,11 @@ const Driver = () => (
     <Nav />
 
     <Container>
-      <Col className="justify-content-center">
-        <h2 className="text-shadow text-center">BECOME A DRIVER WITH CARFIE.</h2>
-      </Col>
+      <Row className="d-flex justify-content-center">
+        <h2 className="text-shadow text-center ml-5">BECOME A DRIVER WITH CARFIE.</h2>
+        <Image fluid className="mw-25 mt-3 ml-5" src="/img/Jingle-Ball-Logo.png" />
+      </Row>
+
       <Row className="justify-content-center align-items-center my-3">
         <Col lg={8}>
           <Row className="align-items-center justify-content-center">
@@ -53,7 +55,7 @@ const Driver = () => (
                 iHeartRadio JingleBall 2019, 7:30PM at Dickies Arena, Fort Worth TX.
                 Complete 150 rides within 90 days for a <strong>$500</strong> bonus.
                 Complete 2 rides to and from Jingle ball for a <strong>$1000</strong> sign up bonus.
-                App Available for download Nov 15 or later.
+              App Available for download Nov 15 or later.
           </h5>
           </Row>
           <Row className="justify-content-center">
@@ -110,6 +112,7 @@ const Driver = () => (
         </Col>
       </Row>
     </Container>
+
     <style jsx> {`
     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
@@ -186,6 +189,7 @@ const Driver = () => (
      `}
     </style>
   </Container>
+
 )
 
 export default Driver
