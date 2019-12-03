@@ -37,8 +37,19 @@ const NavBar = () => (
   </Container>
 );
 
+const Footer = () => (
+  <Navbar sticky="bottom" bg="dark" variant="dark" className="d-flex justify-content-center align-items-center w-100">
+    <Nav className="d-flex justify-content-between align-items-center w-75">
+      <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/037180f9-f522-469d-b9d7-ff8af552e19d/Carfie_Terms.pdf">Terms</Nav.Link>
+      <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/a5a2c9f7-e723-4887-9005-e5d4f34e44fa/Carfie_Privacy.pdf">Privacy</Nav.Link>
+      <Nav.Link href="/Support">Support</Nav.Link>
+    </Nav>
+  </Navbar>
+);
+
+
 const Driver = () => (
-  <Container fluid className="mb-sm-5">
+  <Container className="px-0 mx-0 vw-100 mw-100 vh-100 min-vh-100">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -50,19 +61,19 @@ const Driver = () => (
 
     <Container fluid className="mb-3">
       <Row className="d-flex justify-content-center">
-        <h2 className="text-shadow text-center ml-5">BECOME A DRIVER WITH CARFIE.</h2>
+        <h2 className="text-shadow text-center">BECOME A DRIVER WITH CARFIE.</h2>
       </Row>
 
-      <Row className="justify-content-center align-items-center my-3">
-        <Col lg={8}>
-          <Row className="align-items-center justify-content-center">
-            <Image fluid src="/img/Jingle-Ball-Driver.png" />
+      <Row className="d-flex justify-content-center align-items-center my-3">
+        <Col lg={8} sm={12}>
+          <Row className="d-flex align-items-center justify-content-center">
+            <Image fluid className="w-75" src="/img/Jingle-Ball-Driver.png" />
           </Row>
         </Col>
       </Row>
-      <Row className="justify-content-center align-items-center">
-        <Col sm={11} lg={8} xl={6}>
-          <Row className="justify-content-center">
+      <Row className="d-flex justify-content-center align-items-center">
+        <Col sm={12} lg={8} xl={6}>
+          <Row className="d-flex justify-content-center px-3">
             <h5 className="info text-center">Sign up to drive with Carfie. The official rideshare partner of iHeartRadio JingleBall 2019, 7:30PM at Dickies Arena, Fort Worth TX. </h5>
 
             <h5 className="info text-center">Complete 150 rides within 90 days for a <strong>$500</strong> bonus.</h5>
@@ -76,17 +87,19 @@ const Driver = () => (
             <a href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/037180f9-f522-469d-b9d7-ff8af552e19d/Carfie_Terms.pdf"><h6 className="link">Terms Apply</h6></a>
           </Row>
 
-          <Row className="justify-content-center align-items-center">
-            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col lg={3} md={4} sm={6} className="d-flex justify-content-center align-items-center w-50">
               <a href="https://apps.apple.com/us/app/carfie-driver/id1488008094"><Image fluid src="/img/Apple.png" /></a>
             </Col>
-            <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center w-50">
+            <Col lg={3} md={4} sm={6} className="d-flex justify-content-center align-items-center w-50">
               <a href="https://play.google.com/store/apps/details?id=com.carfie.driver"><Image fluid src="/img/Google.png" /></a>
             </Col>
           </Row>
         </Col>
       </Row>
     </Container>
+
+    <Footer/>
 
 
     <style jsx> {`
