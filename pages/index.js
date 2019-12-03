@@ -66,17 +66,14 @@ const Home = () => (
       <Row>
         <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center">
           <Row className="d-flex justify-content-center align-items-center">
-            <Col lg={12} md={4} sm={6} className="w-100 d-flex justify-content-center align-items-center">
+            <Col lg={12} sm={4} className="w-100 d-flex justify-content-center align-items-center">
               <h2 className="grey">
                 drive for us
             </h2>
             </Col>
-            <Col lg={12} md={6} sm={6} className="d-flex justify-content-center align-items-center">
-              <Row>
-                <Col lg={5} xs={5} className="w-50 d-flex justify-content-center align-items-center">
-                  <Link href="/Driver"><Image fluid className="w-50" src="/img/Driver-Button.png" /></Link>
-                </Col>
-                <Col lg={5} xs={6} className="w-50">
+            <Col lg={12} sm={8} className="d-flex justify-content-center align-items-center">
+              <Row className="d-flex justify-content-center align-items-center">
+                <Col lg={{span: 5, order: 1 }} md={{span: 5, order: 2 }} sm={{span: 5, order: 2 }}  xs={{span: 5, order: 2 }} className="w-50">
                   <Row>
                     <a href="https://apps.apple.com/us/app/carfie-driver/id1488008094"><Image fluid src="/img/Apple.png" /></a>
                   </Row>
@@ -84,23 +81,26 @@ const Home = () => (
                     <a href="https://play.google.com/store/apps/details?id=com.carfie.driver"><Image fluid src="/img/Google.png" /></a>
                   </Row>
                 </Col>
+                <Col lg={{span: 5, order: 2 }} md={{span: 5, order: 1 }} sm={{span: 5, order: 1 }}  xs={{span: 5, order: 1 }} className="w-50 d-flex justify-content-lg-start justify-content-sm-end justify-content-xs-center align-items-center">
+                  <Link href="/Driver"><Image fluid className="w-50" src="/img/Driver-Button.png" /></Link>
+                </Col>
               </Row>
             </Col>
           </Row>
         </Col>
         <Col lg={6} sm={12} className="d-flex justify-content-center align-items-center">
           <Row className="d-flex justify-content-center align-items-center">
-            <Col lg={12} md={4} sm={6} className="w-100 d-flex justify-content-center align-items-center">
+            <Col lg={12} sm={4} className="w-100 d-flex justify-content-center align-items-center">
               <h2 className="grey">
                 ride with us
             </h2>
             </Col>
-            <Col lg={12} md={6} sm={6} className="d-flex justify-content-center align-items-center">
-              <Row>
-                <Col lg={5} xs={5} className="w-50 d-flex justify-content-center align-items-center">
+            <Col lg={12} sm={8} className="d-flex justify-content-center align-items-center">
+              <Row className="d-flex justify-content-center align-items-center">
+              <Col lg={5} md={5} xs={5} className="w-50 d-flex justify-content-sm-end justify-content-xs-center  align-items-center">
                   <Link href="/Rider"><Image fluid className="w-50" src="/img/Rider-Button.png" /></Link>
                 </Col>
-                <Col lg={5} xs={6} className="w-50">
+                <Col lg={5} md={5} xs={5} className="w-50">
                   <Row>
                     <a href="https://apps.apple.com/us/app/carfie/id1487999405"><Image fluid src="/img/Apple.png" /></a>
                   </Row>
