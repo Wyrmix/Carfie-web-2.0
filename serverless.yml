@@ -1,0 +1,4 @@
+# serverless.yml
+
+carfieNextWebApp:
+    component: serverless-next.js
