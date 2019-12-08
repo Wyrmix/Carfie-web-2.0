@@ -67,7 +67,7 @@ const Rider = () => (
       <Row className="d-flex justify-content-center align-items-center my-3">
         <Col lg={8} sm={12}>
           <Row className="d-flex align-items-center justify-content-center">
-            <Image fluid className="w-75" src="/img/Rider_Icon.png" />
+            <Image fluid className="w-75" src="/img/Rider_icon.png" />
           </Row>
         </Col>
       </Row>
