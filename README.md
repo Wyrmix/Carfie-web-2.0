@@ -15,9 +15,11 @@ AWS cli:
 
   1. pip3 install awscli --upgrade --user (should work with pip if you don't have python 3 installed)
   2. [add to path](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html#awscli-install-osx-path)
+
 serverless framework:
 
   1. npm install -g serverless
+
 AWS access keys:
 
   1. get from an admin
