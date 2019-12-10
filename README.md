@@ -5,7 +5,7 @@ This is from the second mockup I was sent.
 npm run dev
 
 
-##Deployment
+## Deployment
 
 Deployment is done through the serverless framework and should be configured using serverless.yaml in the project root.
 
