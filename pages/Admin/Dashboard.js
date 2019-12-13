@@ -161,175 +161,179 @@ const Dashboard = () => (
               {/* this is where I would like to add a loop */}
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Total No. of Rides</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    152
+                    <br />
+                    0.96% down from cancelled request
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Revenue</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    $4780.54
+                    <br />
+                    from 152 Rides
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>No. of service types</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    4
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>No. of scheduled rides</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    0
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>User Cancelled Count</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    106
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Provider Cancelled Count</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    23
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>No of Providers</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    140
                 </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>No. of Users</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    300
                 </Card.Text>
                 </Card.Body>
               </Card>
             </Row>
             <Row className="w-100 h-50">
               <Col sm={12} lg={5}>
-              <Table responsive striped bordered hover>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                    </tr>
-                  </thead>
+                <h1>Wallet Summary</h1>
+                <Table responsive striped bordered hover>
                   <tbody>
                     <tr>
-                      <td>1</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Admin Credit</td>
+                      <td>$1843.54</td>
                     </tr>
                     <tr>
-                      <td>2</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Provider Credit</td>
+                      <td>$278.97</td>
                     </tr>
                     <tr>
-                      <td>3</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Provider Debit</td>
+                      <td>$0.00</td>
                     </tr>
                     <tr>
-                      <td>4</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Commission</td>
+                      <td>$36.94</td>
                     </tr>
                     <tr>
-                      <td>5</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Discount</td>
+                      <td>$-441.15</td>
+                    </tr>
+                    <tr>
+                      <td>Tax Amount</td>
+                      <td>$13.74</td>
+                    </tr>
+                    <tr>
+                      <td>Tips</td>
+                      <td>$55.04</td>
                     </tr>
                   </tbody>
                 </Table>
               </Col>
               <Col sm={12} lg={7}>
+                <h1>Recent Rides</h1>
                 <Table responsive striped bordered hover>
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                      <th>Table heading</th>
-                    </tr>
-                  </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
                     </tr>
                     <tr>
                       <td>5</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
-                      <td>Table cell</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Complete</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Amanda Esposito</td>
+                      <td>1 week ago</td>
+                      <td className="status">Canceled</td>
                     </tr>
                   </tbody>
                 </Table>
@@ -408,6 +412,14 @@ const Dashboard = () => (
     background-color: ghostwhite !important; 
     font-family: 'Raleway', sans-serif;
     color: #878787;
+  }
+
+  .td{
+    color: #212529 !important; 
+  }
+
+  .card-text{
+    color: #212529 !important; 
   }
 
   
