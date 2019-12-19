@@ -1,31 +1,94 @@
 import React from 'react';
-import Link from 'next/link';
-import Navbar from 'react-bootstrap/Navbar';
+// import ReactDOM from 'react-dom';
+// import fetch from 'isomorphic-unfetch';
+
+// import { useForm, useField, splitFormProps } from 'react-form';
+
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 
-const Nav = () => (
-  <Container>
-    <Navbar className="p-0" variant="light">
-      <Navbar.Brand href="/">
-        <Image
-          alt=""
-          src="/img/CARFIE_LOGO.png"
-          width="50%"
-          height="50%"
-          className="d-inline-block align-top"
-        />
-      </Navbar.Brand>
-    </Navbar>
-  </Container>
-);
+import NavBar from '../../components/nav';
+
+/*
+async function sendToServer(val) {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  return val;
+}
+
+function validateUserName(val) {
+  if (!val) {
+    return "Plese enter username";
+  }
+  return false;
+}
+
+async function validatePassword(val) {
+  if (!val) {
+    return "Please enter password";
+  }
+  return instance.debounce(async () => {
+    console.log("checking password");
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    return false;
+  }, 500);
+}
+
+const InputField = React.forwardRef((props, ref) => {
+  const [field, fieldOptions, rest] = splitFormProps(props);
+
+  const {
+    meta: { error, isTouched, isValidating },
+    getInputProps
+  } = useField(field, fieldOptions);
+
+  return (
+    <>
+      <input {...getInputProps({ ref, ...rest })} />{" "}
+      {isValidating ? (
+        <em>Validating...</em>
+      ) : isTouched && error ? (
+        <em>{error}</em>
+      ) : null}
+    </>
+  );
+});
+*/
+
+const MyForm = () => (
+  /*
+  const {
+    Form,
+    meta: { isSubmitting, canSubmit }
+  } = useForm({
+    onSubmit: async (val, instance) => {
+      await sendToServer(val);
+      console.log('Sent to server');
+    },
+    debugForm: true
+  });
+  */
+    <Form>
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" validate />
+      </Form.Group>
+
+      <Form.Group controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+)
 
 const AdminLogin = () => (
-  <Container  className="px-0 mx-0 vw-100 mw-100 vh-100 min-vh-100">
+  <Container className="px-0 mx-0 vw-100 mw-100 vh-100 min-vh-100">
 
     <link
       rel="stylesheet"
@@ -34,30 +97,14 @@ const AdminLogin = () => (
       crossOrigin="anonymous"
     />
 
-      <Nav />
-      <Container className="vh-100 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: 'url(/img/Yellow-grad.png)' }}>
-        <Col>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Form>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-              <Form.Group controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-              </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-            </Button>
-            </Form>
-          </Row>
-        </Col>
-      </Container>
+    <NavBar />
+    <Container className="vh-100 mw-100 mx-0 d-flex justify-content-center align-items-center position-relative" style={{ backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: 'url(/img/Yellow-grad.png)' }}>
+      <Col>
+        <Row className="d-flex justify-content-center align-items-center">
+          <MyForm /> 
+        </Row>
+      </Col>
+    </Container>
     <style jsx global> {`
      @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
      h1, h2, h3, h4, h5, h6 {
@@ -72,7 +119,7 @@ const AdminLogin = () => (
 
      `}
     </style>
-    </Container>
+  </Container>
 )
 
 export default AdminLogin

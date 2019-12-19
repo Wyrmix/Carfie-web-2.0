@@ -2,7 +2,6 @@ import React  from 'react';
 
 import Table from '../../components/table';
 import Card from '../../components/card';
-import AdminLayout from '../../components/admin-layout';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -49,7 +48,7 @@ const cardData = [
     subtitle: '874',
     text: ''
   },
-];
+]
 
 const MyCard = () => (
   <>
@@ -71,7 +70,7 @@ const columns = [
     }
     ]
   }
-];
+]
 
 const data = [
   { name: "Admin Credit", amount: "$1843.54" },
@@ -81,7 +80,7 @@ const data = [
   { name: "Discount", amount: "$-441.15" },
   { name: "Tax Amount", amount: "$13.74" },
   { name: "Tips", amount: "$55.04" }
-]; 
+]
 
 const ridesColumns = [
   {
@@ -97,7 +96,8 @@ const ridesColumns = [
     }
     ]
   }
-]; 
+]
+
 
 const ridesData = [
   {id: 1, name: "Amanda Esposito", time: "1 week ago", status: "Canceled"}, 
@@ -112,7 +112,7 @@ const ridesData = [
   {id: 10, name: "Amanda Esposito", time: "5 week ago", status: "Complete"}
 ]
 
-const Dashboard = () => (
+const BackgroundCheck = () => (
   <>
     <Container>
       <Row className="flex-row flex-wrap w-100 justify-content-between">
@@ -139,9 +139,4 @@ const Dashboard = () => (
   </>
 );
 
-
-export default () => (
-  <AdminLayout>
-    <Dashboard/>
-  </AdminLayout>
-); 
+export default BackgroundCheck

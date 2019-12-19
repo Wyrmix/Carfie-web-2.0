@@ -1,51 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-const NavBar = () => (
-  <Container>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossOrigin="anonymous"
-    />
-    <Navbar className="p-0 justify-content-between" variant="light">
-      <Navbar.Brand href="/">
-        <Image
-          alt=""
-          src="/img/CARFIE_LOGO.png"
-          width="50%"
-          height="50%"
-          className="d-inline-block align-top"
-        />
-      </Navbar.Brand>
-      <Nav>
-        <Nav.Item>
-          <Nav.Link href="/Driver">Drive</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/Rider">Ride</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </Navbar>
-  </Container>
-);
-
-const Footer = () => (
-  <Navbar sticky="bottom" bg="dark" variant="dark" className="d-flex justify-content-center align-items-center w-100">
-    <Nav className="d-flex justify-content-between align-items-center w-75">
-      <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/037180f9-f522-469d-b9d7-ff8af552e19d/Carfie_Terms.pdf">Terms</Nav.Link>
-      <Nav.Link href="https://gallery.mailchimp.com/c9b7a263330dc319587a3f287/files/a5a2c9f7-e723-4887-9005-e5d4f34e44fa/Carfie_Privacy.pdf">Privacy</Nav.Link>
-      <Nav.Link href="http://support.carfie.com">Support</Nav.Link>
-    </Nav>
-  </Navbar>
-);
+import NavBar from '../components/nav';
+import Footer from '../components/footer'; 
 
 const Home = () => (
   <Container className="px-0 mx-0 vw-100 mw-100 vh-100 min-vh-100">
